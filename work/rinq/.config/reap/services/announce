@@ -1,0 +1,11 @@
+---
+service : MailingList
+mailto  : transfire@gmail.com
+from    : admin@tigerops.org
+server  : mail.tigerops.org
+port    : 25
+domain  : tigerops.org
+account : admin@tigerops.org
+secure  : false
+login   : login
+

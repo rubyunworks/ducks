@@ -1,0 +1,54 @@
+<html>
+<head>
+
+<title>Cherry Web</title>
+
+<link rel="stylesheet" href="views/styles/standard.css">
+<link rel="stylesheet" href="views/styles/stars.css">
+
+<!-- <script language="javascript" src="server/javascript/test.js"></script> -->
+
+<script language="javascript" src="server/javascript/jquery-latest.js"></script>
+<script language="javascript" src="server/javascript/jquery.cherry.js"></script>
+
+<script language="javascript">
+
+  //
+  function startProgram(route) {
+
+      // javascript (master) behavior
+      //if (route.actions.behavior) {
+      //    $.getScript(route.actions.behavior);
+      //};
+
+      $('title').append(route.title)  // proper way to inser this?
+
+      // dynamice css?
+
+      // load template
+      $('body').load('views/templates/' + route.view.template);
+
+      // apply behaviors
+      for(behavior in route.action.behaviors) {
+        $.cherry_ajax('actions/behaviors/' + route.action.behaviors[behavior]);
+      };
+
+      // apply data feeds
+      for(feed in route.feeds) {
+        $.cherry_ajax('feeds/' + route.feeds[feed]);
+      };
+
+  };
+
+
+  $(document).ready(function() {
+    $.getJSON('routes/home.json', startProgram);
+  });
+
+</script>
+
+</head>
+
+<body></body>
+
+</html>

@@ -1,0 +1,104 @@
+// Cherry Templates jQuery Plugin.
+//
+//   data = {
+//     hello: "Hello, World!"
+//   }
+//
+//   $.cherry(data)
+//
+// Cherry templates are especially useful when filled via AJAX JSON.
+
+jQuery.cherry = function(data) {
+  jQuery('body').interpolate(data);
+};
+
+// Interpolate data into template nodes.
+
+jQuery.fn.interpolate = function(data) {
+alert(typeof data);
+  switch (typeof data) {
+  case 'object':
+    for (var id in data) {
+      var content = data[id];
+      //matches = node.search("/descendant::*[@id='#{id}']");
+      switch (typeof content) {
+      case 'object':
+        //jQuery("/descendant::*[@id='#{id}']", node).each(function(i){
+        this.find("#"+id).interpolate(content);
+        break;
+      case 'array':
+        this.find("#"+id).each(function(i){
+          //case content[0]
+          //when Hash
+          //  interpolate_table( match_node, content )
+          //else
+          //  interpolate_list( match_node, content )
+          //end
+          this.interpolate_list(content);
+        });
+        break;
+      case 'false':
+        this.find("#"+id).remove();
+        break;
+      case 'null':
+        break; // do nothing
+      default:
+        this.find("#"+id).interpolate_nodes(content);
+      };
+    };
+    break;
+  default:
+    this.interpolate_nodes(data);
+  };
+};
+
+/*
+// Interpolate list.
+
+function interpolate_list(node, data) {
+  temp = node.copy(true)
+  node.empty!
+  for (var d in data) {
+    nc = temp.copy(true);
+    interpolate_children( nc, d )
+    for (var c in nc.children) {
+      node.add(c);
+    };
+  };
+};
+*/
+
+// Interpolate list.
+
+jQuery.fn.interpolate_list = function(data) {
+  var temp = this.clone();
+  this.empty();
+  for (var d in data) {
+    var newNode = temp.clone();
+    newNode.children.interpolate(data);
+    node.append(newNode.childern());
+    //for (var c in nc.children) {
+    //  node.add(c);
+    //};
+  };
+};
+
+// This has some special HTML features.
+//
+// TODO Should we have two modes? One with and one
+// without the extra HTML features.
+
+jQuery.fn.interpolate_nodes = function(data) {
+alert(data.toString());
+  var all_special = new Array;
+
+  // text inputs
+  var special = this.find('input[@type=text]');
+  special.val(data.toString());
+  all_special.concat(special);
+  // textarea
+  // TODO
+
+  this.not(special).empty();
+  this.not(special).append(data.toString());
+};

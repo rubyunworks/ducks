@@ -1,0 +1,144 @@
+[Thu Oct 18 10:53:33 2007] [error] [client 127.0.0.1] /home/cherry/service/ping.rb:44:in `send'
+[Thu Oct 18 10:53:33 2007] [error] [client 127.0.0.1] : 
+[Thu Oct 18 10:53:33 2007] [error] [client 127.0.0.1] undefined method `http_host' for #<CGI:0xb7ba2a18>
+[Thu Oct 18 10:53:33 2007] [error] [client 127.0.0.1]  (
+[Thu Oct 18 10:53:33 2007] [error] [client 127.0.0.1] NoMethodError
+[Thu Oct 18 10:53:33 2007] [error] [client 127.0.0.1] )
+[Thu Oct 18 10:53:33 2007] [error] [client 127.0.0.1] \tfrom /home/cherry/service/ping.rb:44
+[Thu Oct 18 10:53:33 2007] [error] [client 127.0.0.1] \tfrom /home/cherry/service/ping.rb:44:in `each'
+[Thu Oct 18 10:53:33 2007] [error] [client 127.0.0.1] \tfrom /home/cherry/service/ping.rb:44
+[Thu Oct 18 10:53:33 2007] [error] [client 127.0.0.1] \tfrom (eval):505:in `pre'
+[Thu Oct 18 10:53:33 2007] [error] [client 127.0.0.1] \tfrom /home/cherry/service/ping.rb:43
+[Thu Oct 18 10:53:33 2007] [error] [client 127.0.0.1] \tfrom (eval):1022:in `body'
+[Thu Oct 18 10:53:33 2007] [error] [client 127.0.0.1] \tfrom /home/cherry/service/ping.rb:32
+[Thu Oct 18 10:53:33 2007] [error] [client 127.0.0.1] \tfrom /usr/lib/ruby/1.8/cgi.rb:1657:in `html'
+[Thu Oct 18 10:53:33 2007] [error] [client 127.0.0.1] \tfrom (eval):1006:in `html'
+[Thu Oct 18 10:53:33 2007] [error] [client 127.0.0.1] \tfrom /usr/lib/ruby/1.8/cgi.rb:1657:in `html'
+[Thu Oct 18 10:53:33 2007] [error] [client 127.0.0.1] \tfrom /home/cherry/service/ping.rb:28
+[Thu Oct 18 10:53:33 2007] [error] [client 127.0.0.1] \tfrom /usr/lib/ruby/1.8/cgi.rb:706:in `out'
+[Thu Oct 18 10:53:33 2007] [error] [client 127.0.0.1] \tfrom /home/cherry/service/ping.rb:27
+[Thu Oct 18 10:53:33 2007] [error] [client 127.0.0.1] Premature end of script headers: ping.rb
+[Thu Oct 18 10:54:28 2007] [error] [client 127.0.0.1] /home/cherry/service/ping.rb:27:in `send'
+[Thu Oct 18 10:54:28 2007] [error] [client 127.0.0.1] : 
+[Thu Oct 18 10:54:28 2007] [error] [client 127.0.0.1] undefined method `http_host' for #<CGI:0xb7ba89b8>
+[Thu Oct 18 10:54:28 2007] [error] [client 127.0.0.1]  (
+[Thu Oct 18 10:54:28 2007] [error] [client 127.0.0.1] NoMethodError
+[Thu Oct 18 10:54:28 2007] [error] [client 127.0.0.1] )
+[Thu Oct 18 10:54:28 2007] [error] [client 127.0.0.1] \tfrom /home/cherry/service/ping.rb:27
+[Thu Oct 18 10:54:28 2007] [error] [client 127.0.0.1] \tfrom /home/cherry/service/ping.rb:27:in `collect'
+[Thu Oct 18 10:54:28 2007] [error] [client 127.0.0.1] \tfrom /home/cherry/service/ping.rb:27
+[Thu Oct 18 10:54:28 2007] [error] [client 127.0.0.1] Premature end of script headers: ping.rb
+[Thu Oct 18 10:54:32 2007] [error] [client 127.0.0.1] /home/cherry/service/ping.rb:27:in `send'
+[Thu Oct 18 10:54:32 2007] [error] [client 127.0.0.1] : 
+[Thu Oct 18 10:54:32 2007] [error] [client 127.0.0.1] undefined method `http_host' for #<CGI:0xb7c159b4>
+[Thu Oct 18 10:54:32 2007] [error] [client 127.0.0.1]  (
+[Thu Oct 18 10:54:32 2007] [error] [client 127.0.0.1] NoMethodError
+[Thu Oct 18 10:54:32 2007] [error] [client 127.0.0.1] )
+[Thu Oct 18 10:54:32 2007] [error] [client 127.0.0.1] \tfrom /home/cherry/service/ping.rb:27
+[Thu Oct 18 10:54:32 2007] [error] [client 127.0.0.1] \tfrom /home/cherry/service/ping.rb:27:in `collect'
+[Thu Oct 18 10:54:32 2007] [error] [client 127.0.0.1] \tfrom /home/cherry/service/ping.rb:27
+[Thu Oct 18 10:54:32 2007] [error] [client 127.0.0.1] Premature end of script headers: ping.rb
+[Thu Oct 18 10:58:54 2007] [error] [client 127.0.0.1] /usr/lib/ruby/1.8/uri/generic.rb:732:in `merge'
+[Thu Oct 18 10:58:54 2007] [error] [client 127.0.0.1] : 
+[Thu Oct 18 10:58:54 2007] [error] [client 127.0.0.1] both URI are relative
+[Thu Oct 18 10:58:54 2007] [error] [client 127.0.0.1]  (
+[Thu Oct 18 10:58:54 2007] [error] [client 127.0.0.1] URI::BadURIError
+[Thu Oct 18 10:58:54 2007] [error] [client 127.0.0.1] )
+[Thu Oct 18 10:58:54 2007] [error] [client 127.0.0.1] \tfrom /usr/lib/ruby/1.8/uri/common.rb:522:in `join'
+[Thu Oct 18 10:58:54 2007] [error] [client 127.0.0.1] \tfrom /usr/lib/ruby/1.8/uri/common.rb:521:in `each'
+[Thu Oct 18 10:58:54 2007] [error] [client 127.0.0.1] \tfrom /usr/lib/ruby/1.8/uri/common.rb:521:in `join'
+[Thu Oct 18 10:58:54 2007] [error] [client 127.0.0.1] \tfrom /home/cherry/service/yaml2json.rb:16
+[Thu Oct 18 10:58:54 2007] [error] [client 127.0.0.1] Premature end of script headers: yaml2json.rb
+[Thu Oct 18 10:58:59 2007] [error] [client 127.0.0.1] /usr/lib/ruby/1.8/uri/generic.rb:732:in `merge'
+[Thu Oct 18 10:58:59 2007] [error] [client 127.0.0.1] : 
+[Thu Oct 18 10:58:59 2007] [error] [client 127.0.0.1] both URI are relative
+[Thu Oct 18 10:58:59 2007] [error] [client 127.0.0.1]  (
+[Thu Oct 18 10:58:59 2007] [error] [client 127.0.0.1] URI::BadURIError
+[Thu Oct 18 10:58:59 2007] [error] [client 127.0.0.1] )
+[Thu Oct 18 10:58:59 2007] [error] [client 127.0.0.1] \tfrom /usr/lib/ruby/1.8/uri/common.rb:522:in `join'
+[Thu Oct 18 10:58:59 2007] [error] [client 127.0.0.1] \tfrom /usr/lib/ruby/1.8/uri/common.rb:521:in `each'
+[Thu Oct 18 10:58:59 2007] [error] [client 127.0.0.1] \tfrom /usr/lib/ruby/1.8/uri/common.rb:521:in `join'
+[Thu Oct 18 10:58:59 2007] [error] [client 127.0.0.1] \tfrom /home/cherry/service/yaml2json.rb:16
+[Thu Oct 18 10:58:59 2007] [error] [client 127.0.0.1] Premature end of script headers: yaml2json.rb
+[Thu Oct 18 11:00:04 2007] [error] [client 127.0.0.1] /usr/lib/ruby/1.8/cgi.rb:723:in `out'
+[Thu Oct 18 11:00:04 2007] [error] [client 127.0.0.1] : 
+[Thu Oct 18 11:00:04 2007] [error] [client 127.0.0.1] undefined method `length' for #<URI::HTTP:0xfdbdd41da URL:http://cherryweb.org/test.yaml>
+[Thu Oct 18 11:00:04 2007] [error] [client 127.0.0.1]  (
+[Thu Oct 18 11:00:04 2007] [error] [client 127.0.0.1] NoMethodError
+[Thu Oct 18 11:00:04 2007] [error] [client 127.0.0.1] )
+[Thu Oct 18 11:00:04 2007] [error] [client 127.0.0.1] \tfrom /home/cherry/service/yaml2json.rb:20
+[Thu Oct 18 11:00:04 2007] [error] [client 127.0.0.1] Premature end of script headers: yaml2json.rb
+[Thu Oct 18 11:01:01 2007] [error] [client 127.0.0.1] /usr/lib/ruby/1.8/cgi.rb:723:in `out'
+[Thu Oct 18 11:01:01 2007] [error] [client 127.0.0.1] : 
+[Thu Oct 18 11:01:01 2007] [error] [client 127.0.0.1] undefined method `length' for #<URI::HTTP:0xfdbe209cc URL:http://cherryweb.org/test.yaml>
+[Thu Oct 18 11:01:01 2007] [error] [client 127.0.0.1]  (
+[Thu Oct 18 11:01:01 2007] [error] [client 127.0.0.1] NoMethodError
+[Thu Oct 18 11:01:01 2007] [error] [client 127.0.0.1] )
+[Thu Oct 18 11:01:01 2007] [error] [client 127.0.0.1] \tfrom /home/cherry/service/yaml2json.rb:20
+[Thu Oct 18 11:01:01 2007] [error] [client 127.0.0.1] Premature end of script headers: yaml2json.rb
+[Thu Oct 18 11:01:28 2007] [error] [client 127.0.0.1] /usr/lib/ruby/1.8/cgi.rb:723:in `out'
+[Thu Oct 18 11:01:28 2007] [error] [client 127.0.0.1] : 
+[Thu Oct 18 11:01:28 2007] [error] [client 127.0.0.1] undefined method `length' for #<URI::HTTP:0xfdbe1f1da URL:http://cherryweb.org/test.yaml>
+[Thu Oct 18 11:01:28 2007] [error] [client 127.0.0.1]  (
+[Thu Oct 18 11:01:28 2007] [error] [client 127.0.0.1] NoMethodError
+[Thu Oct 18 11:01:28 2007] [error] [client 127.0.0.1] )
+[Thu Oct 18 11:01:28 2007] [error] [client 127.0.0.1] \tfrom /home/cherry/service/yaml2json.rb:20
+[Thu Oct 18 11:01:28 2007] [error] [client 127.0.0.1] Premature end of script headers: yaml2json.rb
+[Thu Oct 18 11:03:38 2007] [error] [client 127.0.0.1] /usr/lib/ruby/1.8/open-uri.rb:32:in `initialize'
+[Thu Oct 18 11:03:38 2007] [error] [client 127.0.0.1] : 
+[Thu Oct 18 11:03:38 2007] [error] [client 127.0.0.1] No such file or directory - test.yaml
+[Thu Oct 18 11:03:38 2007] [error] [client 127.0.0.1]  (
+[Thu Oct 18 11:03:38 2007] [error] [client 127.0.0.1] Errno::ENOENT
+[Thu Oct 18 11:03:38 2007] [error] [client 127.0.0.1] )
+[Thu Oct 18 11:03:38 2007] [error] [client 127.0.0.1] \tfrom /usr/lib/ruby/1.8/open-uri.rb:32:in `open_uri_original_open'
+[Thu Oct 18 11:03:38 2007] [error] [client 127.0.0.1] \tfrom /usr/lib/ruby/1.8/open-uri.rb:32:in `open'
+[Thu Oct 18 11:03:38 2007] [error] [client 127.0.0.1] \tfrom /home/cherry/service/yaml2json.rb:21
+[Thu Oct 18 11:03:38 2007] [error] [client 127.0.0.1] Premature end of script headers: yaml2json.rb
+[Thu Oct 18 11:04:17 2007] [error] [client 127.0.0.1] /usr/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+[Thu Oct 18 11:04:17 2007] [error] [client 127.0.0.1] : 
+[Thu Oct 18 11:04:17 2007] [error] [client 127.0.0.1] no such file to load -- facets/json
+[Thu Oct 18 11:04:17 2007] [error] [client 127.0.0.1]  (
+[Thu Oct 18 11:04:17 2007] [error] [client 127.0.0.1] LoadError
+[Thu Oct 18 11:04:17 2007] [error] [client 127.0.0.1] )
+[Thu Oct 18 11:04:17 2007] [error] [client 127.0.0.1] \tfrom /usr/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+[Thu Oct 18 11:04:17 2007] [error] [client 127.0.0.1] \tfrom /home/cherry/service/yaml2json.rb:11
+[Thu Oct 18 11:04:17 2007] [error] [client 127.0.0.1] Premature end of script headers: yaml2json.rb
+[Thu Oct 18 11:04:28 2007] [error] [client 127.0.0.1] /usr/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+[Thu Oct 18 11:04:28 2007] [error] [client 127.0.0.1] : 
+[Thu Oct 18 11:04:28 2007] [error] [client 127.0.0.1] no such file to load -- facets/json
+[Thu Oct 18 11:04:28 2007] [error] [client 127.0.0.1]  (
+[Thu Oct 18 11:04:28 2007] [error] [client 127.0.0.1] LoadError
+[Thu Oct 18 11:04:28 2007] [error] [client 127.0.0.1] )
+[Thu Oct 18 11:04:28 2007] [error] [client 127.0.0.1] \tfrom /usr/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+[Thu Oct 18 11:04:28 2007] [error] [client 127.0.0.1] \tfrom /home/cherry/service/yaml2json.rb:11
+[Thu Oct 18 11:04:28 2007] [error] [client 127.0.0.1] Premature end of script headers: yaml2json.rb
+[Thu Oct 18 11:04:52 2007] [error] [client 127.0.0.1] /usr/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+[Thu Oct 18 11:04:52 2007] [error] [client 127.0.0.1] : 
+[Thu Oct 18 11:04:52 2007] [error] [client 127.0.0.1] no such file to load -- blow/json
+[Thu Oct 18 11:04:52 2007] [error] [client 127.0.0.1]  (
+[Thu Oct 18 11:04:52 2007] [error] [client 127.0.0.1] LoadError
+[Thu Oct 18 11:04:52 2007] [error] [client 127.0.0.1] )
+[Thu Oct 18 11:04:52 2007] [error] [client 127.0.0.1] \tfrom /usr/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+[Thu Oct 18 11:04:52 2007] [error] [client 127.0.0.1] \tfrom /home/cherry/service/yaml2json.rb:11
+[Thu Oct 18 11:04:52 2007] [error] [client 127.0.0.1] Premature end of script headers: yaml2json.rb
+[Thu Oct 18 11:24:12 2007] [error] [client 127.0.0.1] /home/cherry/service/fileio.rb:20
+[Thu Oct 18 11:24:12 2007] [error] [client 127.0.0.1] : 
+[Thu Oct 18 11:24:12 2007] [error] [client 127.0.0.1] undefined method `document_root' for #<CGI:0xb7b75748>
+[Thu Oct 18 11:24:12 2007] [error] [client 127.0.0.1]  (
+[Thu Oct 18 11:24:12 2007] [error] [client 127.0.0.1] NoMethodError
+[Thu Oct 18 11:24:12 2007] [error] [client 127.0.0.1] )
+[Thu Oct 18 11:24:12 2007] [error] [client 127.0.0.1] Premature end of script headers: fileio.rb
+[Thu Oct 18 11:29:29 2007] [error] [client 127.0.0.1] /home/cherry/service/ping.rb:37: syntax error, unexpected tSTRING_BEG, expecting ')'
+[Thu Oct 18 11:29:29 2007] [error] [client 127.0.0.1]           "cookies: " + cgi.cookies.inspect + "\\n\\n"
+[Thu Oct 18 11:29:29 2007] [error] [client 127.0.0.1]            ^
+[Thu Oct 18 11:29:29 2007] [error] [client 127.0.0.1] /home/cherry/service/ping.rb:38: syntax error, unexpected ')', expecting '}'
+[Thu Oct 18 11:29:29 2007] [error] [client 127.0.0.1] 
+[Thu Oct 18 11:29:29 2007] [error] [client 127.0.0.1] /home/cherry/service/ping.rb:54: syntax error, unexpected $end, expecting '}'
+[Thu Oct 18 11:29:29 2007] [error] [client 127.0.0.1] 
+[Thu Oct 18 11:29:29 2007] [error] [client 127.0.0.1] Premature end of script headers: ping.rb
+[Thu Oct 18 11:35:26 2007] [error] [client 127.0.0.1] malformed header from script. Bad header=HTTP/1.1 200 OK: fileio.rb
+[Thu Oct 18 11:35:31 2007] [error] [client 127.0.0.1] malformed header from script. Bad header=HTTP/1.1 200 OK: fileio.rb
+[Thu Oct 18 11:36:52 2007] [error] [client 127.0.0.1] File does not exist: /home/cherry/service/ping
+[Thu Oct 18 16:12:37 2007] [error] [client 127.0.0.1] File does not exist: /home/cherry/favicon.ico
+[Thu Oct 18 16:13:26 2007] [error] [client 127.0.0.1] File does not exist: /home/cherry/favicon.ico
+[Thu Oct 18 16:14:43 2007] [error] [client 127.0.0.1] File does not exist: /home/cherry/favicon.ico

@@ -1,0 +1,84 @@
+
+function cherry(data) {
+  root = jQuery.root; // Cherry::Xml.new( @source )
+  interpolate( root, data );
+};
+
+# Interpolate data.
+
+function interpolate( node, data ) {
+  switch (typeof data) {
+  case 'object':
+    for (var id in data) {
+      var content = data[id];
+      matches = node.search("/descendant::*[@id='#{id}']");
+      match_node = matches[0];
+
+      if (!match_node) continue;
+
+      switch (typeof content) {
+      case 'object':
+        interpolate(match_node, content);
+        break;
+      case 'array':
+        interpolate_list(match_node, content);
+        //case content[0]
+        //when Hash
+        //  interpolate_table( match_node, content )
+        //else
+        //  interpolate_list( match_node, content )
+        //end
+        break;
+      case 'false':
+        match_node.remove!
+        break;
+      case 'null':
+        break; // do nothing
+      default:
+        interpolate_node(match_node, content);
+      };
+    };
+  default:
+    interpolate_node(node, data.toString);
+  };
+};
+
+// Interpolate list.
+
+function interpolate_list(node, data) {
+  temp = node.copy(true)
+  node.empty!
+  for (var d in data) {
+    nc = temp.copy(true);
+    interpolate_children( nc, d )
+    for (var c in nc.children) {
+      node.add(c);
+    };
+  };
+};
+
+// Interpolate each child.
+
+function interpolate_children(node, data) {
+  for (n in node) {
+    if (typeof n == 'element') {
+      interpolate(n, data);
+    };
+  };
+};
+
+// This has a couple of special HTML features.
+// TODO have two versions?
+
+function interpolate_node( node, data ) {
+  switch (node.name.downcase) {
+  case 'input':
+    if (node['type'].downcase == 'text') {
+      node['value'] = data.toString
+      break;
+    };
+  default:
+    node.content = data.toString
+    break;
+  };
+};

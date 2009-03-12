@@ -1,0 +1,31 @@
+---
+
+syntax:
+  class: Syntax
+
+make:
+  class: Autotools
+
+testunit:
+  class: TestUnit
+
+stats:
+  class: Stats
+
+notes:
+  class: Notes
+
+rdoc:
+  class: RDoc
+  template: jamis
+  inline: true
+
+ri:
+  class: RIDoc
+
+gem:
+  class: Gem
+
+rubyforge:
+  class: Rubyforge
+

@@ -1,0 +1,26 @@
+RINQ Insert Example
+===================
+
+Load RINQ library.
+
+  require 'rinq'
+
+Create example query.
+
+  first, last = 'peter', 'vanbroekhoven'
+
+  @r = RINQ.insert do
+         into :c => :customer, :b => :bank, :a => :account
+         columns c.name
+         values first + ' ' + last
+         where ((a.owner == c) &
+                (a.bank  == b))
+       end
+
+Covert it to SQL.
+
+  sql = @r.to_sql
+  p sql
+
+QED.
+

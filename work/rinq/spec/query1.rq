@@ -1,0 +1,28 @@
+RINQ First Ever Example
+=======================
+
+Load RINQ library.
+
+  require 'rinq'
+
+Create example query.
+
+  first1, first2, last = 'peter', 'glenn', /\Av/
+
+  @banks = RINQ.query do
+       select b.name
+       from :c => :customer, :b => :bank, :a => :account
+       where (( c.firstname == first1 ) |
+              ( c.firstname == first2 ) ) &
+             ( c.lastname =~ last ) &
+             ( a.owner == c ) &
+             ( a.bank == b )
+  end
+
+Covert it to SQL.
+
+  sql = @banks.to_sql
+  p sql
+
+QED.
+

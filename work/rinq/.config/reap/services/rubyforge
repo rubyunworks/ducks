@@ -1,0 +1,9 @@
+---
+service: Rubyforge
+unixname: rinq
+groupid: ?
+
+#publishmap:
+#  admin/web: .
+#  doc/rdoc: rdoc
+

@@ -1,0 +1,28 @@
+
+How many requests per page? Requests are expensive, but caching can improve performance beyond
+this expense. So where's the balance. Categorizing the elements of a page:
+
+  1 layout (template +  master layout)
+  2 stylesheets
+  3 javascripts
+  4 behaviors (injected javascript)
+  5 data
+
+While it is possible merge 1-3 easily, it limits caching. So I think the best thing to do is merge
+all css files into a single css document and server that. Likewise for all javascripts --which can also
+be compressed (nothing too fancy though, as I've heard of issues with compressed scripts.)
+
+I would like to merge the behaviors in with the other scripts, if possible, but it seems like it might
+not be as feasible --we will see. Behvaiors are not top prioroity at this point.
+
+This will leave us withe 4-5 requests per page. Is that too many? One question to ask is whether one 
+cataegory is likely to be used with a variance of another category. For instance, the same stylesheets
+are often used with various layouts. So stylesheets are more likely to benefit from caching. In fact,
+in so far a styles belong to a single layout, they are usually small augmentation and should
+be defined within that layout for optimized loading.
+
+Javascripts on the other hand are a bit more static. Often they go with a single page, but are 
+generally defined outside of the page regardless (for programming convenience). For this reason,
+we'd probably be better off merging javascripts in with the layouts --and we may well do this
+in the future. For now however we will see how things proceed with a separate request.
+

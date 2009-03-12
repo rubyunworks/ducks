@@ -1,0 +1,51 @@
+= Web Ducks
+
+  http://ducks.rubyforge.org
+
+
+== INTRODUCTION
+
+Web Ducks may be the easiest way to create web applications.
+
+
+
+== RELEASE NOTES
+
+Please see NOTES file.
+
+
+== RECENT CHANGES
+
+Please see CHANGES file.
+
+
+== HOW TO INSTALL
+
+Describe your installation procedure here.
+
+To install with RubyGems simply open a console and type:
+
+  gem install ducks
+
+To manually installation, download the tgz package and type:
+
+  tar -xvzf ducks-x.y.z.tgz
+  cd ducks-x.y.z.tgz
+  rake config
+  rake setup
+  rake install
+
+
+== USAGE
+
+Describe how to use your library or application here.
+
+
+== LICENSE
+
+  Copyright (c) 2008 
+
+  This program is ditributed unser the terms of the MIT license.
+
+  Please see COPYING file.
+

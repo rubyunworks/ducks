@@ -1,0 +1,1 @@
+new Module(function() { function xyz() { var x = 1; } })

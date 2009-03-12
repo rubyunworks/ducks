@@ -1,0 +1,13 @@
+#hello_world:
+
+  route: /
+  view:
+    style      : standard.css
+    template   : helloworld.html
+    layout     : standard.html
+  action:
+    controller : helloworld.rb
+    behavior   : helloworld.js
+  feeds:
+    - helloworld.json
+

@@ -1,0 +1,19 @@
+#!/usr/bin/env ruby
+
+require 'rack'
+require 'ducks/rack'
+
+app = Rack::Builder.new do
+  use Rack::CommonLogger
+  use Rack::ShowExceptions
+  use Rack::ShowStatus
+  use Rack::Lint
+
+  run Ducks::RackApp.new
+end
+
+server  = Rack::Handler::WEBrick
+options = {:Port => 9292, :Host => "0.0.0.0", :AccessLog => []}
+
+server.run app, options
+

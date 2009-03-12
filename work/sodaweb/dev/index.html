@@ -1,0 +1,67 @@
+<html>
+<head>
+
+<title>Cherry Web</title>
+
+<link REL="shortcut icon" HREF="feed/images/cherry-sm.png">
+
+<style type="text/css">
+    @import url(view/styles/standard.css);
+    @import url(view/styles/stars.css);
+</style>
+
+<!-- <script language="javascript" src="server/javascript/test.js"></script> -->
+
+<script language="javascript" src="engine/client/xml2json.js"></script>
+
+<script language="javascript" src="engine/client/jquery.js"></script>
+<script language="javascript" src="engine/client/jquery.cherry.js"></script>
+
+
+<script language="javascript">
+
+  var behaviors_location = 'action/behaviors/';
+  var routes_location    = 'action/routes/';
+  var templates_location = 'view/templates/';
+  var feed_location      = 'feed/';
+
+  //
+  function startProgram(route) {
+
+      // javascript (master) behavior
+      //if (route.actions.behavior) {
+      //    $.getScript(route.actions.behavior);
+      //};
+
+      //$('title').append(route.title)  // proper way to inser this?
+      document.title = route.title;
+
+      // dynamice css?
+
+      // load template
+      $('body').load(templates_location + route.view.template);
+
+      // apply behaviors
+      for(behavior in route.action.behaviors) {
+        $.cherry_ajax(behaviors_location + route.action.behaviors[behavior]);
+      };
+
+      // apply data feeds
+      for(feed in route.feeds) {
+        $.cherry_ajax(feed_location + route.feeds[feed]);
+      };
+
+  };
+
+
+  $(document).ready(function() {
+    $.getJSON(routes_location + 'home.json', startProgram);
+  });
+
+</script>
+
+</head>
+
+<body></body>
+
+</html>

@@ -1,0 +1,17 @@
+= TODO
+
+* Need to add Remote Ajax call functionality.
+
+* Consider the extension name of duck scripts.
+
+* Should Ducks be a jQuery-based system?
+  jQuery can provide the Ajax. Or should it be
+  framework agnostic?
+
+* Try RubyJS as opposed to Red, see which one
+  proves the best.
+
+* Could Joose be useful?
+
+* What about ruby.js?
+

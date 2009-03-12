@@ -7,21 +7,23 @@
 
 Web Ducks may be the easiest way to create web applications.
 
+The overarching idea of the Ducks Web Framework, is that everything is written
+in Ruby. You do not create separate HTML files, CSS files, Javascripts files, etc.
+So witht he exception of raw data, such as images, the whole site consists of
+a set of ruby scripts. With these scripts one creates HTML, CSS, Javascript, etc.
+through ultra-high level DSLs.
+
+The backend server is Rack-based.
+
+Currently this project is very much a prototype.
 
 
-== RELEASE NOTES
+== RELEASE
 
-Please see NOTES file.
-
-
-== RECENT CHANGES
-
-Please see CHANGES file.
+Please see NEWS file.
 
 
 == HOW TO INSTALL
-
-Describe your installation procedure here.
 
 To install with RubyGems simply open a console and type:
 
@@ -31,9 +33,7 @@ To manually installation, download the tgz package and type:
 
   tar -xvzf ducks-x.y.z.tgz
   cd ducks-x.y.z.tgz
-  rake config
-  rake setup
-  rake install
+  setup.rb
 
 
 == USAGE
@@ -43,9 +43,9 @@ Describe how to use your library or application here.
 
 == LICENSE
 
-  Copyright (c) 2008 
+  Copyright (c) 2009 TigerOps / Thomas Sawyer
 
   This program is ditributed unser the terms of the MIT license.
 
-  Please see COPYING file.
+  Please see COPYING or LICENSE file.
 
